@@ -1,6 +1,5 @@
 **bintray.properties**
 
-
 ```
 #配置bintray账号相关信息
 #bintray用户名,不是登陆邮箱,是个人中心右上角显示的名字
