@@ -8,7 +8,7 @@ bintray.user=*************
 #bintray的ApiKey
 bintray.apiKey=*************
 #bintray的Organization Id
-bintray.organizationId=better
+bintray.organizationId=*********
 
 
 #配置开发者信息
