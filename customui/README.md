@@ -1,4 +1,4 @@
-**bintray.properties**
+#bintray.properties
 
 ```
 #配置bintray账号相关信息
