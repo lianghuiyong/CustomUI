@@ -74,22 +74,30 @@ install {
     }
 }
 
-//生成sources.jar
+tasks.withType(Javadoc) {
+    options.addStringOption('Xdoclint:none', '-quiet')
+    options.addStringOption('encoding', 'UTF-8')
+    options.addStringOption('charSet', 'UTF-8')
+}
+
+// This generates sources.jar
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
     classifier = 'sources'
 }
 
+//This generates javadocJar.jar
 task javadoc(type: Javadoc) {
     source = android.sourceSets.main.java.srcDirs
+    classpath += configurations.compile
     classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
 }
 
-//生成javadoc.jar
 task javadocJar(type: Jar, dependsOn: javadoc) {
     classifier = 'javadoc'
     from javadoc.destinationDir
 }
+
 
 artifacts {
     archives javadocJar
