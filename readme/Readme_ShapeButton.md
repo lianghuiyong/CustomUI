@@ -1,16 +1,23 @@
 # 自定义shape按钮
 
-### 直接写颜色值，省去每次写shape和选中效果xml
+# 开发时，为了一个简单的按钮要写一堆的样式代码，我表示我在写假代码。
 
-![](http://o9or3yi8n.bkt.clouddn.com/CustomUI_shape_button.png)
+
+## 可定制属性
 
 ```
     app:stroke :细线宽度
     app:radius :拐角宽度
-    app:pressColor :按钮选中后整体覆盖颜色
+    app:normalColor :按钮颜色
+    app:pressColor  :按钮选中颜色
     app:stroke_normalColor :细线颜色
     app:stroke_pressColor :细线选中后的颜色
+```
 
+![](http://o9or3yi8n.bkt.clouddn.com/CustomUI_shape_button.png)
+
+## 示例图代码
+```
     <com.better.customui.widget.ShapeButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,13 +31,7 @@
 
 ```
 
-
-
 ```
-    app:radius :拐角宽度
-    app:normalColor :按钮颜色
-    app:pressColor  :按钮选中颜色
-
     <com.better.customui.widget.ShapeButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -40,4 +41,5 @@
         app:pressColor="#9F3988D2"
         app:radius="3dp" />
 ```
+
 
