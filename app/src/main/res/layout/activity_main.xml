@@ -4,24 +4,42 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
     android:orientation="vertical">
 
-    <TextView
+    <!--
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <net.liang.customui.widget.ImageProgress
+                app:text_size="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+    -->
+
+    <net.liang.customui.widget.ShapeButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="123456"
+        app:pressColor="#2F000000"
+        app:radius="3dip"
+        app:stroke="0.5dip"
+        app:stroke_normalColor="#2A8425"
+        app:stroke_pressColor="#8F2A8425" />
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:src="@mipmap/ic_launcher"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+    <net.liang.customui.widget.ShapeButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="123456"
+        app:normalColor="#FF3988D2"
+        app:pressColor="#9F3988D2"
+        app:radius="3dp" />
 
-        <net.liang.customui.widget.ImageProgress
-            app:text_size="18sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    </FrameLayout>
 </LinearLayout>
