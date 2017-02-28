@@ -23,7 +23,7 @@
         </FrameLayout>
     -->
 
-    <net.liang.customui.widget.ShapeButton
+    <com.better.customui.widget.ShapeButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="123456"
@@ -33,7 +33,7 @@
         app:stroke_normalColor="#2A8425"
         app:stroke_pressColor="#8F2A8425" />
 
-    <net.liang.customui.widget.ShapeButton
+    <com.better.customui.widget.ShapeButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"

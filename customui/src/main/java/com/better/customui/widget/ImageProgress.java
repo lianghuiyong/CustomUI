@@ -1,4 +1,4 @@
-package net.liang.customui.widget;
+package com.better.customui.widget;
 
 
 import android.annotation.SuppressLint;
@@ -12,7 +12,7 @@ import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
 
-import net.liang.customui.R;
+import com.better.customui.R;
 
 public class ImageProgress extends View {
 

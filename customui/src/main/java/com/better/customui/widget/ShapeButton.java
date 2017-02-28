@@ -1,4 +1,4 @@
-package net.liang.customui.widget;
+package com.better.customui.widget;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -11,7 +11,7 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.Button;
 
-import net.liang.customui.R;
+import com.better.customui.R;
 
 import static android.R.attr.radius;
 

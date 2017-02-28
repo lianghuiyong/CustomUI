@@ -1,4 +1,4 @@
-package net.liang.customuiapplication;
+package com.better.customuiapplication;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
