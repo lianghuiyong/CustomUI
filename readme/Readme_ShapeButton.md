@@ -10,6 +10,18 @@
     app:buttonColor: 按钮颜色
 ```
 
+```xml
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!--pressed-->
+        <item android:color="#CC3835" android:state_pressed="true" />
+        
+        <!--disable-->
+        <item android:color="#1ACC3835" android:state_enabled="false" />
+        
+        <!--normal-->
+        <item android:color="#EE2420"/>
+    </selector>
+```
 ## 示例
 ```xml
     <LinearLayout
