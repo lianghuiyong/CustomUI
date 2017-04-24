@@ -1,25 +1,26 @@
 package com.better.customui.widget;
 
-import android.annotation.TargetApi;
 import android.content.Context;
+import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.StateListDrawable;
 import android.os.Build;
 import android.util.AttributeSet;
-import android.widget.Button;
+import android.view.Gravity;
 
 import com.better.customui.R;
-
-import static android.R.attr.radius;
 
 /**
  * Created by lenovo on 2017/2/28.
  */
 
-public class ShapeButton extends Button {
+public class ShapeButton extends android.support.v7.widget.AppCompatTextView {
+
+    private float radius;
+    private float stroke;
+    private ColorStateList colors;
 
     public ShapeButton(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -31,65 +32,73 @@ public class ShapeButton extends Button {
         init(context, attrs);
     }
 
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public ShapeButton(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
-
-        init(context, attrs);
-    }
-
     void init(Context context, AttributeSet attrs) {
-
+        setClickable(true);
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.ShapeButton);
-        int normalColor = typedArray.getColor(R.styleable.ShapeButton_normalColor, Color.parseColor("#00000000"));//内部填充颜色
-        int pressColor = typedArray.getColor(R.styleable.ShapeButton_pressColor, Color.parseColor("#00000000"));//内部填充颜色
-        int strokeNormalColor = typedArray.getColor(R.styleable.ShapeButton_stroke_normalColor, Color.parseColor("#00000000"));//内部填充颜色
-        int strokePressColor = typedArray.getColor(R.styleable.ShapeButton_stroke_pressColor, Color.parseColor("#00000000"));//内部填充颜色
-        float radius = typedArray.getDimension(R.styleable.ShapeButton_radius, 0);
-        float stroke = typedArray.getDimension(R.styleable.ShapeButton_stroke, 0);
+        radius = typedArray.getDimension(R.styleable.ShapeButton_radius, 0);
+        stroke = typedArray.getDimension(R.styleable.ShapeButton_stroke, 0);
+        colors = typedArray.getColorStateList(R.styleable.ShapeButton_buttonColor);
 
-        GradientDrawable normalDrawable = getDrawable(context,  normalColor, strokeNormalColor, radius, stroke);
-        GradientDrawable pressDrawable = getDrawable(context,  pressColor, strokePressColor, radius, stroke);
-        StateListDrawable selector = getSelector(normalDrawable, pressDrawable);
+        StateListDrawable selector = getSelector();
 
         if (Build.VERSION.SDK_INT < 16) {
             setBackgroundDrawable(selector);
         } else {
             setBackground(selector);
         }
+
+        setGravity(Gravity.CENTER);
     }
 
-    public static GradientDrawable getDrawable(Context context , int rgb, int strokeRgb, float radius, float stroke) {
-
+    public GradientDrawable getDrawable(int state) {
         GradientDrawable gradientDrawable = new GradientDrawable();
-
         gradientDrawable.setShape(GradientDrawable.RECTANGLE);
-        gradientDrawable.setColor(rgb);//设置颜色
-        gradientDrawable.setCornerRadius(dp2px(context, radius));//设置圆角的半径
-        gradientDrawable.setStroke(dp2px(context, stroke), strokeRgb);//描边
 
+        int color_pressed = colors.getColorForState(new int[]{android.R.attr.state_pressed}, 0);
+        int color_disable = colors.getColorForState(new int[]{-android.R.attr.state_enabled}, 0);
+        int color_normal = colors.getColorForState(new int[]{android.R.attr.state_enabled}, 0);
+
+        switch (state) {
+            case android.R.attr.state_pressed:
+                gradientDrawable.setColor(stroke == 0 ? color_pressed : Color.parseColor("#0C000000"));//设置颜色
+                gradientDrawable.setStroke(dp2px(stroke), color_pressed);//描边
+                break;
+
+            case -android.R.attr.state_enabled:
+                gradientDrawable.setColor(stroke == 0 ? color_disable : Color.parseColor("#06000000"));//设置颜色
+                gradientDrawable.setStroke(dp2px(stroke), color_disable);//描边
+                break;
+
+            case android.R.attr.state_enabled:
+                gradientDrawable.setColor(stroke == 0 ? color_normal : Color.parseColor("#00000000"));//设置颜色
+                gradientDrawable.setStroke(dp2px(stroke), color_normal);//描边
+                break;
+        }
+        gradientDrawable.setCornerRadius(dp2px(radius));//设置圆角的半径
         return gradientDrawable;
     }
 
-    public static StateListDrawable getSelector(Drawable normalDrawable, Drawable pressDrawable) {
+    public StateListDrawable getSelector() {
+
         StateListDrawable stateListDrawable = new StateListDrawable();
-        //给当前的颜色选择器添加选中图片指向状态，未选中图片指向状态
-        stateListDrawable.addState(new int[]{android.R.attr.state_enabled, android.R.attr.state_pressed}, pressDrawable);
-        stateListDrawable.addState(new int[]{android.R.attr.state_enabled}, normalDrawable);
-        //设置默认状态
-        stateListDrawable.addState(new int[]{}, normalDrawable);
+
+        //注意该处的顺序，只要有一个状态与之相配，背景就会被换掉
+        //所以不要把大范围放在前面了，如果sd.addState(new[]{},normal)放在第一个的话，就没有什么效果了
+        stateListDrawable.addState(new int[]{android.R.attr.state_pressed, android.R.attr.state_enabled}, getDrawable(android.R.attr.state_pressed));
+        stateListDrawable.addState(new int[]{-android.R.attr.state_enabled}, getDrawable(-android.R.attr.state_enabled));
+        stateListDrawable.addState(new int[]{}, getDrawable(android.R.attr.state_enabled));
+
         return stateListDrawable;
     }
 
     /**
      * dp转px
      *
-     * @param context 上下文
      * @param dpValue dp值
      * @return px值
      */
-    public static int dp2px(Context context, float dpValue) {
-        final float scale = context.getResources().getDisplayMetrics().density;
+    public int dp2px(float dpValue) {
+        final float scale = getResources().getDisplayMetrics().density;
         return (int) (dpValue * scale + 0.5f);
     }
 }
