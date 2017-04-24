@@ -10,8 +10,6 @@
     app:buttonColor: 按钮颜色
 ```
 
-![](http://oeqej1j2m.bkt.clouddn.com/ShapeButton_1.png)
-
 ## 示例
 ```xml
     <LinearLayout
@@ -40,3 +38,4 @@
     </LinearLayout>
 
 ```
+![](http://oeqej1j2m.bkt.clouddn.com/ShapeButton_1.png)
