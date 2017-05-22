@@ -71,5 +71,5 @@
 
 ```
 <div align="center">
-  	<img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_1.png" width="200">
+  	<img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_1.png" width="300">
 </div>
