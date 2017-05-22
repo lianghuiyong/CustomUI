@@ -132,4 +132,31 @@
             app:buttonColor="@color/red"/>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.better.customui.widget.ShapeEditText
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:hint="Edit"
+            app:radius="1dp"
+            app:stroke="0.2dp"
+            app:buttonColor="@color/green"/>
+
+        <com.better.customui.widget.ShapeEditText
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:enabled="false"
+            android:hint="Edit"
+            app:radius="1dp"
+            app:stroke="0.2dp"
+            app:buttonColor="@color/green"/>
+    </LinearLayout>
+
 </LinearLayout>
