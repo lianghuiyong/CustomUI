@@ -5,9 +5,9 @@
 ## 可定制属性
 
 ```
-    app:stroke :细线宽度(可不设置)
-    app:radius :拐角宽度
-    app:buttonColor: 按钮颜色
+    app:stroke :细线宽度(不设置时，背景色会铺满按钮)
+    app:radius :拐角半径
+    app:buttonColor: 按钮颜色（支持Color style）
 ```
 
 ```xml
@@ -27,6 +27,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        
+        <com.better.customui.widget.ShapeButton
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:textColor="@color/green"
+            android:text="stroke"
+            app:radius="3dp"
+            app:stroke="1dip"
+            app:buttonColor="@color/green"/>
+            
         <com.better.customui.widget.ShapeButton
             android:layout_weight="1"
             android:layout_width="0dp"
