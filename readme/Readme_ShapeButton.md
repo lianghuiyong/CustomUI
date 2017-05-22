@@ -1,6 +1,13 @@
-# 自定义shape按钮
+# 做按钮，用shape画样式，NO，简单点
 
-# 开发时，为了一个简单的按钮要写一堆的样式代码，我表示我在写假代码。
+[![](https://img.shields.io/badge/moven%20center-1.1.0-brightgreen.svg?style=flat)](https://bintray.com/betterliang/Android/customui)
+![](https://img.shields.io/badge/minSdk-15-blue.svg)
+[![](https://img.shields.io/github/stars/lianghuiyong/CustomUI.svg)](https://github.com/lianghuiyong/CustomUI/stargazers)
+[![](https://img.shields.io/github/forks/lianghuiyong/CustomUI.svg)](https://github.com/lianghuiyong/CustomUI/network)
+
+```gradle
+    compile 'com.better.android:customui:x.y.z'
+```
 
 ## 可定制属性
 
@@ -63,4 +70,6 @@
     </LinearLayout>
 
 ```
-![](http://oeqej1j2m.bkt.clouddn.com/ShapeButton_1.png)
+<div align="center">
+  	<img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_1.png" width="200">
+</div>
