@@ -15,5 +15,5 @@ ShapeEditText | 继承于AppCompatEditText <br> app:stroke :细线宽度(不设�
 ShapeButton | 继承于AppCompatTextView <br> app:stroke :细线宽度(不设置时，背景色会铺满按钮) <br> app:radius :拐角半径 <br> app:buttonColor: 按钮颜色（支持Color style） |  [示例](https://github.com/lianghuiyong/CustomUI/wiki/ShapeButton)
 
 <div align="center">
-  	<img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_1.png" width="300">
+  	<img src="http://oeqej1j2m.bkt.clouddn.com/shapeButton.png" width="300">
 </div>
