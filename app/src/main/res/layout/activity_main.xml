@@ -34,7 +34,7 @@
             android:layout_margin="10dp"
             android:padding="20dp"
             android:textColor="@color/green"
-            android:text="stroke"
+            android:text="Button"
             app:radius="3dp"
             app:stroke="1dip"
             app:buttonColor="@color/green"/>
@@ -62,7 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:padding="20dp"
-            android:text="stroke"
+            android:text="Button"
             app:radius="3dp"
             app:buttonColor="@color/green"/>
 
@@ -88,7 +88,7 @@
             android:layout_margin="10dp"
             android:padding="20dp"
             android:textColor="@color/red"
-            android:text="stroke"
+            android:text="Button"
             app:radius="3dp"
             app:stroke="1dip"
             app:buttonColor="@color/red"/>
@@ -116,7 +116,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:padding="20dp"
-            android:text="stroke"
+            android:text="Button"
             app:radius="3dp"
             app:buttonColor="@color/red"/>
 
