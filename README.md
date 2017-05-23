@@ -4,13 +4,15 @@
 [![](https://img.shields.io/github/forks/lianghuiyong/CustomUI.svg)](https://github.com/lianghuiyong/CustomUI/network)
 
 
+```gradle
+    compile 'com.better.android:customui:x.y.z'
+```
+
 <div align="center">
   	<img src="http://oeqej1j2m.bkt.clouddn.com/shapeButton.png" width="300">
 </div>
 
-```gradle
-    compile 'com.better.android:customui:x.y.z'
-```
+
 
 Name | Explain | Sample
 --- | --- | ---
