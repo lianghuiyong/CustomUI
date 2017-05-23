@@ -3,15 +3,16 @@
 [![](https://img.shields.io/github/stars/lianghuiyong/CustomUI.svg)](https://github.com/lianghuiyong/CustomUI/stargazers)
 [![](https://img.shields.io/github/forks/lianghuiyong/CustomUI.svg)](https://github.com/lianghuiyong/CustomUI/network)
 
+
+<div align="center">
+  	<img src="http://oeqej1j2m.bkt.clouddn.com/shapeButton.png" width="300">
+</div>
+
 # 做按钮，用shape画样式，NO，简单点
 
 ```gradle
     compile 'com.better.android:customui:x.y.z'
 ```
-
-<div align="center">
-  	<img src="http://oeqej1j2m.bkt.clouddn.com/shapeButton.png" width="300">
-</div>
 
 Name | Explain | Sample
 --- | --- | ---
