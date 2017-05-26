@@ -28,6 +28,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <com.better.customui.widget.ShapeButton
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:textColor="@color/green"
+            android:text="Button Demo"
+            app:radius="10dp"
+            app:stroke="10dp"
+            app:strokeColor="@color/button_strokecolor_sel"
+            app:buttonColor="@color/button_color_sel"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.better.customui.widget.ShapeButton
+            android:id="@+id/btn"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
