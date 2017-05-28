@@ -22,9 +22,16 @@
     </selector>
 ```
 
+# 说明
+```
+    app:stroke :细线宽度(不设置时，背景色会铺满按钮)
+    app:radius :拐角半径
+    app:buttonColor: 按钮颜色（支持Color style
+```
+
+# 示例
 ShapeButton | Explain | Sample
 --- | --- | ---
-|   |     |app:stroke :细线宽度(不设置时，背景色会铺满按钮)  <br> app:radius :拐角半径 <br> app:buttonColor: 按钮颜色（支持Color style）
 Enable   | <div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_2_05.gif" width="300"></div>| app:radius="1.5dp" <br>  app:stroke="0.2dp"  <br>  app:buttonColor="@color/green"
 Disable  | <div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_2_06.gif" width="300"></div>| android:enabled="false"  <br>  app:radius="1.5dp" <br>  app:stroke="0.2dp"  <br>  app:buttonColor="@color/green"
 Enable   | <div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_2_07.gif" width="300"></div>| app:radius="1.5dp"  <br>  app:buttonColor="@color/green"
