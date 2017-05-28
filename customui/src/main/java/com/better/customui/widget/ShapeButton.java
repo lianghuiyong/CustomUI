@@ -16,7 +16,7 @@ import com.better.customui.R;
  * Created by lenovo on 2017/2/28.
  */
 
-public class ShapeButton extends android.support.v7.widget.AppCompatTextView {
+public class ShapeButton extends android.support.v7.widget.AppCompatButton {
 
     private float radius;
     private float stroke;
@@ -46,7 +46,6 @@ public class ShapeButton extends android.support.v7.widget.AppCompatTextView {
         } else {
             setBackground(selector);
         }
-
         setGravity(Gravity.CENTER);
     }
 

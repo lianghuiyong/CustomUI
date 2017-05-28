@@ -27,17 +27,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <com.better.customui.widget.ShapeButton
-            android:layout_weight="1"
+            android:id="@+id/shapeButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:layout_weight="1"
             android:padding="20dp"
-            android:textColor="@color/green"
             android:text="Button"
-            app:radius="3dp"
-            app:stroke="1dip"
-            app:buttonColor="@color/green"/>
+            android:textColor="@color/green"
+            app:buttonColor="@color/green"
+            app:radius="1.5dp"
+            app:stroke="0.5dp" />
 
         <com.better.customui.widget.ShapeButton
             android:layout_weight="1"
@@ -48,23 +50,25 @@
             android:enabled="false"
             android:textColor="@color/green"
             android:text="disable"
-            app:radius="3dp"
-            app:stroke="1dp"
+            app:radius="1.5dp"
+            app:stroke="0.5dp"
             app:buttonColor="@color/green"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <com.better.customui.widget.ShapeButton
-            android:layout_weight="1"
+            android:id="@+id/shapeButton2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:layout_weight="1"
             android:padding="20dp"
             android:text="Button"
-            app:radius="3dp"
-            app:buttonColor="@color/green"/>
+            app:buttonColor="@color/green"
+            app:radius="1.5dp" />
 
         <com.better.customui.widget.ShapeButton
             android:layout_weight="1"
@@ -74,7 +78,7 @@
             android:padding="20dp"
             android:enabled="false"
             android:text="disable"
-            app:radius="3dp"
+            app:radius="1.5dp"
             app:buttonColor="@color/green"/>
     </LinearLayout>
 
@@ -89,8 +93,8 @@
             android:padding="20dp"
             android:textColor="@color/red"
             android:text="Button"
-            app:radius="3dp"
-            app:stroke="1dip"
+            app:radius="1.5dp"
+            app:stroke="0.5dp"
             app:buttonColor="@color/red"/>
 
         <com.better.customui.widget.ShapeButton
@@ -102,8 +106,8 @@
             android:enabled="false"
             android:textColor="@color/red"
             android:text="disable"
-            app:radius="3dp"
-            app:stroke="1dp"
+            app:radius="1.5dp"
+            app:stroke="0.5dp"
             app:buttonColor="@color/red"/>
     </LinearLayout>
 
@@ -117,7 +121,7 @@
             android:layout_margin="10dp"
             android:padding="20dp"
             android:text="Button"
-            app:radius="3dp"
+            app:radius="1.5dp"
             app:buttonColor="@color/red"/>
 
         <com.better.customui.widget.ShapeButton
@@ -128,7 +132,7 @@
             android:padding="20dp"
             android:enabled="false"
             android:text="disable"
-            app:radius="3dp"
+            app:radius="1.5dp"
             app:buttonColor="@color/red"/>
     </LinearLayout>
 
@@ -142,7 +146,7 @@
             android:layout_margin="10dp"
             android:padding="10dp"
             android:hint="Edit"
-            app:radius="1dp"
+            app:radius="1.5dp"
             app:stroke="0.2dp"
             app:buttonColor="@color/green"/>
 
@@ -153,8 +157,8 @@
             android:layout_margin="10dp"
             android:padding="10dp"
             android:enabled="false"
-            android:hint="Edit"
-            app:radius="1dp"
+            android:hint="Edit Disable"
+            app:radius="1.5dp"
             app:stroke="0.2dp"
             app:buttonColor="@color/green"/>
     </LinearLayout>
