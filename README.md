@@ -24,12 +24,12 @@
 
 ShapeButton | Explain | Sample
 --- | --- | ---
-Enable   | <div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_2_05.gif" width="100"></div><div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_2_09.gif" width="100"></div>|` app:radius="1.5dp"` <br> ` app:stroke="0.2dp" ` <br> ` app:buttonColor="@color/green"`
-Disable   | <div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_2_06.gif" width="100"></div><div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_2_10.gif" width="100"></div>|` android:enabled="false" ` <br> ` app:radius="1.5dp"` <br> ` app:stroke="0.2dp" ` <br> ` app:buttonColor="@color/green"`
-Enable   | <div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_2_07.gif" width="100"></div><div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_2_11.gif" width="100"></div>|` app:radius="1.5dp"`  <br> ` app:buttonColor="@color/green"`
-Disable   | <div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_2_08.gif" width="100"></div><div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_2_12.jpg" width="100"></div>|` android:enabled="false" ` <br> ` app:radius="1.5dp"` <br> ` app:buttonColor="@color/green"`
+Enable   | <div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_2_05.gif" width="200"></div><div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_2_09.gif" width="200"></div>|` app:radius="1.5dp"` <br> ` app:stroke="0.2dp" ` <br> ` app:buttonColor="@color/green"`
+Disable   | <div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_2_06.gif" width="200"></div><div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_2_10.gif" width="200"></div>|` android:enabled="false" ` <br> ` app:radius="1.5dp"` <br> ` app:stroke="0.2dp" ` <br> ` app:buttonColor="@color/green"`
+Enable   | <div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_2_07.gif" width="200"></div><div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_2_11.gif" width="200"></div>|` app:radius="1.5dp"`  <br> ` app:buttonColor="@color/green"`
+Disable   | <div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_2_08.gif" width="200"></div><div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeButton_2_12.jpg" width="200"></div>|` android:enabled="false" ` <br> ` app:radius="1.5dp"` <br> ` app:buttonColor="@color/green"`
 
 ShapeEditText | Explain | Sample
 --- | --- | ---
-Enable   | <div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeEditText_2_13.gif" width="100"></div>|` app:radius="1.5dp"` <br> ` app:stroke="0.2dp" ` <br> ` app:buttonColor="@color/green"`
-Disable  | <div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeEditText_2_14.gif" width="100"></div>|`android:enabled="false" ` <br>` app:radius="1.5dp"` <br> ` app:stroke="0.2dp" ` <br> ` app:buttonColor="@color/green"`
+Enable   | <div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeEditText_2_13.gif" width="200"></div>|` app:radius="1.5dp"` <br> ` app:stroke="0.2dp" ` <br> ` app:buttonColor="@color/green"`
+Disable  | <div><img src="http://oeqej1j2m.bkt.clouddn.com/ShapeEditText_2_14.gif" width="200"></div>|`android:enabled="false" ` <br>` app:radius="1.5dp"` <br> ` app:stroke="0.2dp" ` <br> ` app:buttonColor="@color/green"`
