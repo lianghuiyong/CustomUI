@@ -1,4 +1,4 @@
-[![](https://img.shields.io/badge/moven%20center-1.2.5-brightgreen.svg?style=flat)](https://bintray.com/betterliang/Android/customui)
+[![](https://img.shields.io/badge/moven%20center-1.2.6-brightgreen.svg?style=flat)](https://bintray.com/betterliang/Android/customui)
 ![](https://img.shields.io/badge/minSdk-15-blue.svg)
 [![](https://img.shields.io/github/stars/lianghuiyong/CustomUI.svg)](https://github.com/lianghuiyong/CustomUI/stargazers)
 [![](https://img.shields.io/github/forks/lianghuiyong/CustomUI.svg)](https://github.com/lianghuiyong/CustomUI/network)
